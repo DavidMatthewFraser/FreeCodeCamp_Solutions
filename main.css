@@ -1,89 +1,28 @@
-body, html {scroll-behavior: smooth;color: white;}
-
-/*Section Divs*/
+body, html {scroll-behavior: smooth;}
+html{background-color:white;}
 body > div{
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: black;
+  padding-bottom: 150px;
+}
+div > img{
+  width:30%;
 }
 p{
-  width: 50%;
-  font-size: 1.25em;
-  line-height: 1.6;
-  text-align: center;
+  text-indent: 70px;
+  width: 60%;
+  font-size: 1.5em;
+  line-height: 2;
 }
-#earlyYears{
-  background-color: grey;
+h1{
+  font-size:  5em;
+  margin-top:100px;
+  margin-bottom: 50px;
 }
-#linux{
-  background-color: black;
-}
-#linux-rocks{
-  background-color: grey;
-}
-#achievements{
-  background-color:grey;
-}
-#references{
-  background-color: black;
-}
-#aboutMe{
-  background-color: grey;
-}
-.container{
-  padding: 10%;
-  display: grid;
-  grid-template-columns: 22% 22% auto;
-  grid-template-rows: 22% auto 22%;
-}
-.container > div{
-  text-align: center;
-  border: 2px black solid;
-  font-size: 1.25em;
-  padding: 10px;
-  margin: 1px;
-}
-/*Section Images*/
-#cover-page-image{
-  width: 50%;
-}
-#earlyPhoto{
- width: 40%;
-}
-.downarrow{
-  width: 70px;
-  height: 70px;
-}
-.downarrow:hover{
-  width: 90px;
-}
-.flexSideBySide{
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-#earlyText{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.flexSideBySide > img{
-  padding: 20px;
-}
-/*Navbar*/
-#navbar{
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  list-style-type: none;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  background-color: #333;
+h2{
+  text-decoration: underline;
 }
 li {
   float: left;
@@ -97,4 +36,66 @@ li a {
 }
 li a:hover {
   background-color: #111;
+}
+@media (max-width: 930px) {
+  h1{
+    font-size: 2em;
+  }
+  h2{font-size: 1.25em}
+  p{font-size: 1em;}
+  li{
+    font-size: .8em;
+  }
+  li a{
+    padding: 5px;
+  }
+}
+#earlyYears{
+  background-color: #e9ecf2;
+}
+#linux{
+  background-color: white;
+}
+#linux-rocks{
+  background-color: #e9ecf2;
+}
+#achievements{
+  background-color:#e9ecf2;
+}
+#references{
+  background-color: white;
+}
+#aboutMe{
+  background-color: #e9ecf2;
+}
+#profilePic{
+  border-radius: 50%;
+  border: black 1px solid;
+  width: 20%;
+}
+#navbar{
+  opacity:0.7;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.container{
+  padding-left: 150px;
+  padding-right: 150px;
+  display: grid;
+  grid-template-columns: 22% 22% auto;
+  grid-template-rows: 22% auto 22%;
+}
+.container > div{
+  background-color: white;
+  text-align: center;
+  border: 2px black solid;
+  font-size: 1.15em;
+  padding: 20px;
+  margin: 1px;
 }
