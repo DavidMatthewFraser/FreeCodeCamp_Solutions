@@ -1,0 +1,100 @@
+body, html {scroll-behavior: smooth;color: white;}
+
+/*Section Divs*/
+body > div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+p{
+  width: 50%;
+  font-size: 1.25em;
+  line-height: 1.6;
+  text-align: center;
+}
+#earlyYears{
+  background-color: grey;
+}
+#linux{
+  background-color: black;
+}
+#linux-rocks{
+  background-color: grey;
+}
+#achievements{
+  background-color:grey;
+}
+#references{
+  background-color: black;
+}
+#aboutMe{
+  background-color: grey;
+}
+.container{
+  padding: 10%;
+  display: grid;
+  grid-template-columns: 22% 22% auto;
+  grid-template-rows: 22% auto 22%;
+}
+.container > div{
+  text-align: center;
+  border: 2px black solid;
+  font-size: 1.25em;
+  padding: 10px;
+  margin: 1px;
+}
+/*Section Images*/
+#cover-page-image{
+  width: 50%;
+}
+#earlyPhoto{
+ width: 40%;
+}
+.downarrow{
+  width: 70px;
+  height: 70px;
+}
+.downarrow:hover{
+  width: 90px;
+}
+.flexSideBySide{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#earlyText{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.flexSideBySide > img{
+  padding: 20px;
+}
+/*Navbar*/
+#navbar{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
