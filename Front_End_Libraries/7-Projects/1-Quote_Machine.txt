@@ -1,0 +1,18 @@
+
+Potential Tools: HTML, JavaScript, Css, Bootstrap, SASS, React, Redux, JQuery
+
+User Stories:
+
+- Wrapper element id='quote-box'
+- 'quote-box' > element id = 'text'
+- 'quote-box' > element id = 'author'
+- 'quote-box' > clickable element id = 'new-quote'
+- 'quote-box' > a element id = 'tweet-quote'
+- on first load, #text displays random quote
+- on first load, #author displays random author
+- #new-quote clicked, #text displays new random quote
+- #new-quote clicked, #author displays new random author
+- #tweet-quote clicked, can tweet quote on 'twitter.com/intent/tweet....'
+- #quote-box is horizontally centered
+
+(Browser Zoom 100%)
