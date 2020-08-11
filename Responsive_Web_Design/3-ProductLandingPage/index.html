@@ -2,42 +2,56 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Product Landing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   </head>
   <style>
-    div > body {
+    img {
+      width: 100px;
+    }
+    .section {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     nav {
       position: fixed;
-      top 0;
+      top: 0;
+      left: 0;
     }
     @media(){
 
     }
   </style>
   <body>
-    <div id='header'>
-      <img id='header-img' src='https://cdn1.iconfinder.com/data/icons/system-black-circles/512/java-512.png'>
-      <nav id='nav-bar'>
-        <a href='#section1' class='nav-link'>one</a>
-        <a href='#section2' class='nav-link'>one</a>
-        <a href='#section3' class='nav-link'>one</a>
-      </nav>
-    </div>
-    <div id='section1'>
-      <iframe id='video' width="420" height="315"
-      src="https://www.youtube.com/embed/tgbNymZ7vqY">
-      </iframe>
-    </div>
-    <div id='section2'>
-      <form id='form' action='https://www.freecodecamp.com/email-submit'>
-        <input type='email' name='email' id='email' placeholder="email@email" required=''>
-        <input id='submit' type='submit' value='get started'>
-      </form>
-    </div>
-    <div id='section3'></div>
+    <div class='container-fluid'>
+      <div id='header'>
+        <nav id='nav-bar'>
+          <a href='#section1' class='nav-link'>section1</a>
+          <a href='#section2' class='nav-link'>section2</a>
+          <a href='#section3' class='nav-link'>section3</a>
+        </nav>
+        <img id='header-img' src='https://cdn1.iconfinder.com/data/icons/system-black-circles/512/java-512.png'>
+      </div>
 
+      <div class='section' id='section1'>
+        <iframe id='video' width="420" height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+      </div>
+      <div class='section' id='section2'>
+        <form id='form' action='https://www.freecodecamp.com/email-submit'>
+          <input type='email' name='email' id='email' placeholder="email@email" required=''>
+          <input id='submit' class='btn btn-primary' type='submit' value='get started'>
+        </form>
+      </div>
+      <div class='section' id='section3'>
+        <p>Section Three</p>
+      </div>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
